@@ -1,3 +1,5 @@
+/* .classname and #IDname, div for type selector and * for all */
+
 .header1 {
     background-color: red;
     color: white;
@@ -19,4 +21,17 @@
     background-color: rgb(90,201,16);
     font-size: 24px;
     font-weight: bold; 
+}
+
+.click-me,
+.no-click-me {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman, sans-serif";
+}
+.click-me {
+    background-color: black;
+    color: white;
+}
+.no-click-me {
+    background-color: yellow;
 }

@@ -1,7 +1,22 @@
-div {
+.header1 {
     background-color: red;
     color: white;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
+}
+
+
+.odd {
+    background-color: rgb(241, 68, 169);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#second {
+    color: blue;
+    font-size: 36px;
+}
+#fourth {
+    background-color: rgb(90,201,16);
+    font-size: 24px;
+    font-weight: bold; 
 }

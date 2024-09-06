@@ -1,5 +1,4 @@
 /* .classname and #IDname, div for type selector and * for all */
-
 .header1 {
     background-color: red;
     color: white;
@@ -43,4 +42,11 @@
 .avatar.distorted {
     height: 400px;
     width: 200ox;
+}
+
+.container .text {
+    background-color: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
 }

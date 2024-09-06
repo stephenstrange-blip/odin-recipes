@@ -71,15 +71,16 @@ body {
     font-weight: 800;
   }
   
-
-  
-.confirm {
-    background: green;
+.button {
+    font-size: 20px;
+}
+#confirm-button {
+    background-color: green;
     color: white;
     font-weight: bold;
   } 
   
-.button {
+#cancel-button {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-size: 20px;

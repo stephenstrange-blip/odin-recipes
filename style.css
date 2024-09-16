@@ -208,6 +208,8 @@ section article article {
     border: 5px solid wheat;
 }
 
+/* linked element */
+
 .links-list a{
     background-color: aqua;
     color: rgb(27, 29, 28);
@@ -222,7 +224,7 @@ section article article {
 }
 
 
-
+/* Margin and padding TOD Activity */
 .one {
     background: pink;
     border: 3px solid blue;
@@ -247,32 +249,42 @@ section article article {
     margin-left: 1500px;
 }
 
-
 .card {
-    width: 400px;
-    background: #fff;
-    margin: 16px auto;
-    padding: 2px;
-  }
-  
-  .title {
-    background: #e3f4ff;
-    padding: 2px;
-  }
-  
-  .content {
-    background: #e3f4ff;
-    padding: 2px;
-  }
-  
-  .button-container {
-    background: #e3f4ff;
-    padding: 2px;
-    align-self: center;
-  }
-  
-  button {
-    background: white;
-    border: 1px solid #eee;
-    align-self: center;
-  }
+  width: 400px;
+  background: #fff;
+  margin: 16px auto;
+  border: black;
+  padding: 5px;
+}
+
+
+.title {
+  background: #e3f4ff;
+  padding: 1%;
+  display: block;
+  margin: 3px;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.content {
+  background: #e3f4ff;
+  padding: 1%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin: 3px;
+}
+
+.button-container {
+  background: #e3f4ff;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1% 150px;
+}
+
+button {
+  background: white;
+  border: 1px solid #eee;
+  display: block;
+}

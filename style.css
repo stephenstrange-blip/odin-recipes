@@ -1,10 +1,21 @@
 /* .classname and #IDname, div for type selector and * for all */
+body {
+    background-color: rgb(132, 189, 240);
+}
+
 .header1 {
     background-color: red;
+    height:150px;
+    width: 150px;
     color: white;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 30px solid rgb(252, 189, 16);
+    box-sizing: border-box;
+    
 }
 
 
@@ -95,4 +106,173 @@ text {
     color: rgb(0, 0, 0);
     font-weight: 800;
     font-size: 14px;
+  }
+
+
+/* Box Model */
+p.box-example,
+ul.box-example {
+    border: 2px solid rgb(223, 11, 11);
+    text-align: center;
+}
+
+.block,
+li {
+    border: 3px solid lavender;
+    padding: 1%;
+    color: rgb(0, 0, 0)
+}
+
+.block {
+    display:block;
+}
+
+li {
+    display: inline;
+}
+
+.container {
+    border-top: 5px dotted green;
+    border-right: 1px solid black;
+    border-bottom: 20px double rgb(23 45 145);
+  }
+  
+  .box {
+    border: 1px solid #333333;
+    border-top-style: dotted;
+    border-right-width: 20px;
+    border-bottom-color: hotpink;
+  }
+
+
+
+  
+
+section.flexbox1 {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: flex-start;
+    /* flex-direction: row-reverse; this is the longhand to flex-flow*/ 
+    box-sizing: border-box;
+    
+}
+article {
+    flex: 1 150px;
+    margin: 2px;
+    padding: 2px;
+    border: 2px double red;
+    /* flex-wrap: wrap; this is the longhand to flex-flow*/
+}
+article.even {
+    flex:5 150px;
+}
+
+.flexbutton {
+    display:flex;
+    /* Need to put height para makita yung effect ng align-items */
+    height: 100px; 
+    /* width: 20px; */
+    margin: 5px;
+    padding: 50px;
+    border: 2px double wheat;
+    align-items:center;
+    justify-content: space-around;
+}
+.flexbutton1 {
+    /* default value is 0.  Flex items with the same order value will appear in their source order. 
+    So if you have four items whose order values have been set as 2, 1, 1, and 0 respectively,
+    their display order would be 4th, 2nd, 3rd, then 1st.*/
+    order: 1; 
+    align-self: flex-end;
+}
+.flexbutton2 {
+    align-self: flex-start;
+}
+.flexbutton4 {
+    order: -1;
+}
+
+
+.flexbox2 section {
+    display: flex;
+    flex: 200px;
+    flex-flow: row wrap;
+}
+section article {
+    border: 15px double rgb(209, 23, 23); 
+}
+section article.even {
+    flex: 200px;
+}
+section article article {
+    border: 5px solid wheat;
+}
+
+.links-list a{
+    background-color: aqua;
+    color: rgb(27, 29, 28);
+    text-decoration: wavy;
+    padding: 1em 2em;
+    display: inline-block;
+}
+/* separate declaration for the hover decorations */
+.links-list a:hover{
+    background-color: beige;
+    color: blueviolet;
+}
+
+
+
+.one {
+    background: pink;
+    border: 3px solid blue;
+    /* CHANGE ME */
+    padding: 10px;
+    margin: 10px;
+}
+  
+.two {
+    background: lightblue;
+    border: 3px solid purple;
+    /* CHANGE ME */
+    margin-bottom: 100px;
+}
+  
+.three {
+    background: peachpuff;
+    border: 3px solid brown;
+    width: 200px;
+    /* CHANGE ME */
+    padding: 8x;
+    margin-left: 1500px;
+}
+
+
+.card {
+    width: 400px;
+    background: #fff;
+    margin: 16px auto;
+    padding: 2px;
+  }
+  
+  .title {
+    background: #e3f4ff;
+    padding: 2px;
+  }
+  
+  .content {
+    background: #e3f4ff;
+    padding: 2px;
+  }
+  
+  .button-container {
+    background: #e3f4ff;
+    padding: 2px;
+    align-self: center;
+  }
+  
+  button {
+    background: white;
+    border: 1px solid #eee;
+    align-self: center;
   }

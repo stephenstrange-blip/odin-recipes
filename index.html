@@ -10,6 +10,9 @@
                 background-color: blue;
                 color: white;
                 font-size: 18px;
+                border: 20px;
+                padding: 20px;
+                margin: 10px;
             }
         </style>
 
@@ -19,7 +22,7 @@
         <!-- TOD CSS Activity 1-->
         <div class="header1">Odin Recipes</div>
         <div class="header2">Odin Recipes2</div>
-        <button style="background-color: orange; font-size: 18px;">Odin Recipes3</button>
+        <button style="background-color: orange; font-size: 18px; margin: 10px">Odin Recipes3</button>
 
 
         <ul>    
@@ -99,8 +102,171 @@
         <div class="text">I'm a div with thin text and a child div!
         <div class="text child">I'm a smaller child div with extra bold text.</div>
         </div>
-            
 
+        <!-- Box Model (Display) Example -->
+        <p class="box-example">I am a paragraph. A short one.</p>
+        <ul class="box-example"l>
+          <li>By Default, our</li>
+          <li>display is block,</li>
+          <li>but we were set</li>
+          <li>to inline.</li>
+          <li>Our top and bottom</li>
+          <li>margin, border, and padding</li>
+          <li>will not push elements</li> 
+          <li>away anymore</li>
+        </ul>
+        <p class="box-example">I am another paragraph. Some of the 
+            <span class="block">words (like me who is, by default, inline but was set to block
+                and so my margins, border, and padding will push any element away to make space for me)
+        </span> have been wrapped in a <span>span element</span>.</p>
+
+        <div class="container">
+            <p class="box">Yahoo!</p>
+        </div>
+
+        <header style="text-align: center; margin: 1%;">
+            Flexbox Sample
+        </header>
+        <section class="flexbox1">
+            <article>
+                <h1> Item 1</h1>We have a multiple column layout with equal-sized columns, and the columns are all the same height. 
+                This is because the default values given to flex items (the children of the flex container)
+                are set up to solve common problems such as this.</article>
+            <article class="even">
+                <h1> Item 2</h1>Let's recap what's happening here. Adding a display value of flex to an element makes it a flex container. 
+                The container is displayed as Block-level content in terms of how it interacts with the rest of the page. 
+                When the element is converted to a flex container, its children are converted to (and laid out as) flex items.
+            </article>
+            <article>
+                <h1> Item 3</h1>You can make the container inline using an outside display value (e.g., display: inline flex),
+                which affects how the container itself is laid out in the page. 
+                The legacy inline-flex display value displays the container as 
+                inline as well. We'll focus on how the contents of the container behave in this tutorial, 
+                but if you want to see the effect of inline versus block layout, 
+                you can have a look at the value comparison on the display property page.
+            </article>
+            <article class="even">
+                <h1> Item 4</h1>One issue that arises when you have a fixed width or height in your layout 
+                is that eventually your flexbox children will overflow their container, breaking the layout. 
+                Have a look at our flexbox-wrap0.html example and try viewing it live 
+                (take a local copy of this file now if you want to follow along with this example):
+            </article>
+            <article>
+                <h1> Item 5</h1>Here we see that the children are indeed breaking out of their container. 
+                By default, the browser tries to place all the flex items in a single row 
+                if the flex-direction is set to row or a single column if the flex-direction is set to column. 
+                One way in which you can fix this is to add the following declaration to your &lt;section&gt; rule:
+            </article>
+            <article class="even">
+                <h1> Item 6</h1>We now have multiple rows. Each row has as many flexbox children fitted into it as is sensible. 
+                Any overflow is moved down to the next line. The flex: 200px declaration set on the articles means
+                that each will be at least 200px wide. We'll discuss this property in more detail later on. 
+                You might also notice that the last few children on the last row are each made wider so that the entire row is still filled.
+            </article>
+            <article>
+                <h1> Item 7</h1>
+                The attribute "flex: (proportion unit: any number from 1 to 10) anysizepx"  
+                basically states, "Each flex item will first be given anysizepx of the available space. 
+                After that, the rest of the available space will be shared according to the proportion units." 
+                Try refreshing and you'll see a difference in how the space is shared.
+            </article>
+        </section>
+        <div class="flexbutton">
+            <button class="flexbutton1">Button 1</button>
+            <button class="flexbutton2">Button 2</button>
+            <button class="flexbutton3">Button 3</button>
+            <button class="flexbutton4">Button 4</button>
+            <button class="flexbutton5">Button 5</button>
+          </div>
+
+        <div class="flexbox2">
+            
+        <header style="text-align: center; margin: 1%;">
+            <strong>Flexbox Sample 2</strong>
+        </header>
+        <section>
+            <article>
+                <h1> Item 1</h1>We have a multiple column layout with equal-sized columns, and the columns are all the same height. 
+                This is because the default values given to flex items (the children of the flex container)
+                are set up to solve common problems such as this.</article>
+            <article class="even">
+                <h1> Item 2</h1>Let's recap what's happening here. Adding a display value of flex to an element makes it a flex
+                The container is displayed as Block-level content in terms of how it interacts with the rest of the page. 
+                When the element is converted to a flex container, its children are converted to (and laid out as) flex items.
+            </article>
+            <article>
+                <h1> Item 3</h1>You can make the container inline using an outside display value (e.g., display: inline flex),
+                which affects how the container itself is laid out in the page. 
+                The legacy inline-flex display value displays the container as 
+                inline as well. We'll focus on how the contents of the container behave in this tutorial, 
+                but if you want to see the effect of inline versus block layout, 
+                you can have a look at the value comparison on the display property page.
+            </article>
+            <article class="even">
+                <h1> Item 4</h1>One issue that arises when you have a fixed width or height in your layout 
+                is that eventually your flexbox children will overflow their container, breaking the layout. 
+                Have a look at our flexbox-wrap0.html example and try viewing it live 
+                (take a local copy of this file now if you want to follow along with this example):
+            </article>
+            <article>
+                <div>
+                    <article>
+                        <h1> Item 5</h1>Here we see that the children are indeed breaking out of their container. 
+                        By default, the browser tries to place all the flex items in a single row 
+                        if the flex-direction is set to row or a single column if the flex-direction is set to column. 
+                        One way in which you can fix this is to add the following declaration to your &lt;section&gt; rule:
+                    </article>
+                    <article class="even">
+                        <h1> Item 6</h1>We now have multiple rows. Each row has as many flexbox children fitted into it as is sensible. 
+                        Any overflow is moved down to the next line. The flex: 200px declaration set on the articles means
+                        that each will be at least 200px wide. We'll discuss this property in more detail later on. 
+                        You might also notice that the last few children on the last row are each made wider so that the entire row is still filled.
+                    </article>
+                    <article>
+                        <h1> Item 7</h1>
+                        The attribute "flex: (proportion unit: any number from 1 to 10) anysizepx"  
+                        basically states, "Each flex item will first be given anysizepx of the available space. 
+                        After that, the rest of the available space will be shared according to the proportion units." 
+                        Try refreshing and you'll see a difference in how the space is shared.
+                    </article>
+                    <article>
+                        <button>Button 1</button>
+                        <button>Button 2</button>
+                        <button>Button 3</button>
+                        <button>Button 4</button>
+                        <button>Button 5</button>
+                    </article>
+                </div>
+            </article>
+        </section>
+
+        <nav>
+            <ul class="links-list">
+                <li><a href="">Link 1</a></li>
+                <li><a href="">Link 2</a></li>
+                <li><a href="">Link 3</a></li>
+            </ul>
+        </nav>
+
+        <!-- padding and margin exercise TOD -->
+        <div class="one">
+            DIV ONE
+          </div>
+        <div class="two">
+            DIV TWO
+        </div>
+        <div class="three">
+            DIV THREE
+        </div>
+
+        <!-- padding and margin exercise 2 TOD -->
+        <div class="card">
+            <h1 class="title">I'm a card</h1>
+            <div class="content">I have content inside me..lorem ipsum blah blah blah. Here's some stuff you need to read.</div>
+            <div class="button-container">and a <button>BIG BUTTON</button></div>
+        </div>
+        
+    </div>
     </body>
 
 </html>

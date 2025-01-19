@@ -1,0 +1,95 @@
+/* Using auto as a flex-basis tells the item to check for a width declaration (i.e. width: 250px). */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-container {
+    color: rgb(233, 221, 200);
+    background-color: rgb(110, 151, 241);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    /* border: 2px solid rgb(233, 221, 200); */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.subscribe,
+.social {
+    align-self: flex-end;
+    margin-bottom: 5px;
+}
+.signup {
+    margin-left: auto;
+}
+
+
+.login {
+    margin-left: 10px;
+}
+.header-container {
+    color: rgb(233, 221, 200);
+    background-color: rgb(159, 186, 245);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.header {
+    display: flex;
+    width: 900px;
+    height: 300px;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+.photo-grid {
+    width: 900px;
+    display: flex;
+    /* if there are multiple rows or columns, row/column-reverse reverses the order per row/column, 
+        not the whole set or list of elements */
+    flex-flow: row wrap; 
+    justify-content: center;
+}
+.photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+}
+
+.footer-one,
+.footer-three {
+    width: 60px;
+    /* flex: initial follows specified width of a flex item and ignores the flex rule 
+        but only works if one of the flex items is set to flex more than or less than the others*/
+    flex: initial;
+    background-color: rgb(110, 151, 241);
+}
+
+.footer-two {
+    /* in this case, this flex item is being flexed twice the others */
+    flex: 2;
+}

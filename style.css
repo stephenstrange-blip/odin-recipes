@@ -141,7 +141,7 @@ li {
     border: 1px solid #333333;
     border-top-style: dotted;
     border-right-width: 20px;
-    border-bottom-color: hotpink;
+   border-bottom-color: hotpink;
   }
 
 
@@ -280,6 +280,8 @@ section article article {
   display: block;
   margin: 0 auto;
   text-align: center;
+  /* first value is top padding, followed by right, bottom andl left */
+  /* i.e. padding: 1% 2% 3px 4cm; */
   padding: 1% 150px;
 }
 
